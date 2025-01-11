@@ -4,10 +4,10 @@
       <fa-icon :icon="iconName"></fa-icon>
     </span>
     <div class="info-box-content">
-      <span class="info-box-text">{{text}}</span>
-      <b-spinner small v-if="!number" type="grow"></b-spinner>
-      <span v-else class="info-box-number">{{number | formatWithThousandSep}}</span>
-    </div>
+  <span class="info-box-text">{{text}}</span>
+  <span v-if="number !== null" class="info-box-number">{{number | formatWithThousandSep}}</span>
+</div>
+
   </div>
 </template>
 

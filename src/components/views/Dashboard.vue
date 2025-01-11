@@ -6,45 +6,39 @@
         <b-col>
             <router-link to="/vehicles" style="color:black">
               <info-box color-class="bg-aqua"
-                        iconName="car"
-                        text="Vehicles"
+                      
+                        text="Total Images: 51,839"
                         :number="stats.vehicles"></info-box>
             </router-link>
         </b-col>
         <b-col>
           <router-link to="/sensors" style="color:black">
               <info-box color-class="bg-red"
-                    iconName="satellite-dish"
-                    text="Sensors"
+                    
+                    text="Train Images: 39,209"
                     :number="stats.sensors"></info-box>
             </router-link>
         </b-col>
         <b-col>
           <router-link to="/drive_setups" style="color:black">
               <info-box color-class="bg-green"
-                    iconName="cogs"
-                    text="Drive Setups"
+                    
+                    text="Test Images: 12,630"
                     :number="stats.drive_setups"></info-box>
             </router-link>
         </b-col>
         <b-col>
           <router-link to="/drives" style="color:black">
               <info-box color-class="bg-yellow"
-                    iconName="chart-area"
-                    text="Recorded Test Drives"
+                    
+                    text="Number of classes: 43"
                     :number="stats.recorded_drives"></info-box>
             </router-link>
         </b-col>
       </b-row>
 
       <b-row>
-        <b-col cols="5">
-          <b-card header="Top contributing vehicles">
-            <b-spinner v-if="vehicleChart.isLoading" type="grow"></b-spinner>
-            <p v-else-if="vehicleChart.errorMessage" class="text-red"> {{ vehicleChart.errorMessage }}</p>
-            <apexchart v-else type="pie" width=100% :options="vehicleChart.options" :series="vehicleChart.series" />
-          </b-card>
-        </b-col>
+        
         <!--
         <b-col cols="7">
           <b-card :header="'Value contribution by week in ' + currentYear">
@@ -60,9 +54,6 @@
         <p> <strong>Dataset :</strong> German Traffic Sign Recognition</p>
         <p> Total 43 classes</p>
         <p> More than 50,000 Total images</p>
-        <p> Training set include <strong> 39209 </strong> Images & Test set include 12630 Images</p>
-
-
         <div class="container">
         <h2 class="mt-5">Dataset Directory Structure</h2>
         <div class="code-box">
@@ -254,7 +245,7 @@ export default {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
 }
 .frequeny {
-  max-width: 60%;
+  max-width: 70%;
   height: 69%;
   border: 1px solid #ddd; /* Optional styling */
   border-radius: 5px; /* Optional styling */
