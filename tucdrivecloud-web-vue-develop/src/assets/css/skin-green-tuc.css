@@ -1,0 +1,246 @@
+/* edited for TUC CD */
+
+.main-header .logo {
+	padding: 0 !important;
+}
+
+a {
+    color: #6A8A26;
+}
+
+.main-header .sidebar-toggle:before {
+    /* use a cusotm icon instead of the provided
+       webfont based one for teh sidebar toggle */
+    content: "" !important;
+}
+
+/** fix minor glitches related to bootstrap 4 <-> AdminLTE **/
+.navbar {
+    padding: 0 0 !important;
+}
+.main-header>.navbar {
+    height: 50px !important;
+}
+
+.sidebar-toggle {
+    height: 50px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.skin-green .main-header .navbar {
+    background-color: #005F50
+}
+
+.skin-green .main-header .navbar .nav>li>a {
+    color: #fff
+}
+
+.navbar-custom-menu > ul > li > a {
+    height: 50px;
+    padding: 0 5px;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+/* **** */
+
+/* animate header dropdown menus
+ * see https://stackoverflow.com/questions/50022112/animate-dropdown-menu-bootstrap-4
+ * does not work with bootstrap-vue dropdowns -> enable only for user dropdown in header
+ */
+ .navbar-nav .dropdown-menu {
+    display: block;
+    border: 0 !important;
+}
+
+.navbar-nav .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.navbar-nav .dropdown-menu.show {
+    max-height: 500px;
+}
+/* **** */
+
+.skin-green .main-header .navbar .nav>li>a:hover,
+.skin-green .main-header .navbar .nav>li>a:active,
+.skin-green .main-header .navbar .nav>li>a:focus,
+.skin-green .main-header .navbar .nav .open>a,
+.skin-green .main-header .navbar .nav .open>a:hover,
+.skin-green .main-header .navbar .nav .open>a:focus,
+.skin-green .main-header .navbar .nav>.active>a {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6
+}
+
+.skin-green .main-header .navbar .sidebar-toggle {
+    color: #fff
+}
+
+.skin-green .main-header .navbar .sidebar-toggle:hover {
+    color: #f6f6f6;
+    background: rgba(0, 0, 0, 0.1)
+}
+
+.skin-green .main-header .navbar .sidebar-toggle {
+    color: #fff
+}
+
+.skin-green .main-header .navbar .sidebar-toggle:hover {
+    background-color: #6A8A26
+}
+
+@media (max-width:767px) {
+    .skin-green .main-header .navbar .dropdown-menu li.divider {
+        background-color: rgba(255, 255, 255, 0.1)
+    }
+    .skin-green .main-header .navbar .dropdown-menu li a {
+        color: #fff
+    }
+    .skin-green .main-header .navbar .dropdown-menu li a:hover {
+        background: #6A8A26
+    }
+}
+
+.skin-green .main-header .logo {
+    background-color: #6A8A26;
+    color: #fff;
+    border-bottom: 0 solid transparent
+}
+
+.skin-green .main-header .logo:hover {
+    background-color: #6A8A26
+}
+
+.skin-green .main-header li.user-header {
+    color: white;
+    background-color: #6A8A26
+}
+
+.skin-green .content-header {
+    background: transparent
+}
+
+.skin-green .wrapper,
+.skin-green .main-sidebar,
+.skin-green .left-side {
+    background-color: #222d32
+}
+
+.skin-green .user-panel>.info,
+.skin-green .user-panel>.info>a {
+    color: #fff
+}
+
+.skin-green .sidebar-menu>li.header {
+    color: #4b646f;
+    background: #1a2226
+}
+
+.skin-green .sidebar-menu>li>a {
+    border-left: 3px solid transparent
+}
+
+.skin-green .sidebar-menu>li:hover>a,
+.skin-green .sidebar-menu>li.active>a {
+    color: #fff;
+    background: #1e282c;
+    border-left-color: #6A8A26
+}
+
+.skin-green .sidebar-menu>li>.treeview-menu {
+    margin: 0 1px;
+    background: #2c3b41
+}
+
+.skin-green .sidebar a {
+    color: #b8c7ce
+}
+
+.skin-green .sidebar a:hover {
+    text-decoration: none
+}
+
+.skin-green .treeview-menu>li>a {
+    color: #8aa4af
+}
+
+.skin-green .treeview-menu>li.active>a,
+.skin-green .treeview-menu>li>a:hover {
+    color: #fff
+}
+
+.skin-green .sidebar-form {
+    border-radius: 3px;
+    border: 1px solid #374850;
+    margin: 10px 10px
+}
+
+.skin-green .sidebar-form input[type="text"],
+.skin-green .sidebar-form .btn {
+    box-shadow: none;
+    background-color: #374850;
+    border: 1px solid transparent;
+    height: 35px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.skin-green .sidebar-form input[type="text"] {
+    color: #666;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px
+}
+
+.skin-green .sidebar-form input[type="text"]:focus,
+.skin-green .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
+    background-color: #fff;
+    color: #666
+}
+
+.skin-green .sidebar-form input[type="text"]:focus+.input-group-btn .btn {
+    border-left-color: #fff
+}
+
+.skin-green .sidebar-form .btn {
+    color: #999;
+    border-top-left-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 0
+}
+
+.skin-green.layout-top-nav .main-header>.logo {
+    background-color: #6A8A26;
+    color: #fff;
+    border-bottom: 0 solid transparent
+}
+
+.skin-green.layout-top-nav .main-header>.logo:hover {
+    background-color: #6A8A26
+}
+
+/* bootstrap modal background is not transparent by default (full black) */
+.modal-backdrop
+{
+    opacity:0.3 !important;
+}
+/* fix: modal adds right padding to body which destroys the layout
+   see https://stackoverflow.com/questions/32862394/bootstrap-modals-keep-adding-padding-right-to-body-after-closed */
+.modal-open {
+    padding-right: 0px !important;
+}
+
+/* menu search is currently not supported / working */
+#searchForm {
+    visibility: hidden;
+    height: 0;
+}

@@ -1,0 +1,7 @@
+/* Set the theme color of the component */
+$themeColor: #6A8A26;
+
+/* import theme style */
+//@import 'vue-slider-component/lib/theme/default.scss';
+
+@import 'components/controls/vue-slider-component-fix/theme/default.scss';
